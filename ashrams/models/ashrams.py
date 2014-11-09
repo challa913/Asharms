@@ -1,6 +1,7 @@
 from django.core.validators import MinValueValidator
 from django.db import models
 from base import Base
+from myuser.models import MyUser
 
 __author__ = 'challa'
 
@@ -25,8 +26,9 @@ class Ashrams(Base, models.Model):
                                         default=0)
     above_sixty = models.IntegerField(validators=[MinValueValidator(0)], verbose_name="above 60",
                                     default=0)
-    #user = models.ForeignKey(MyUser)
+    user = models.ForeignKey(MyUser)
     ashram_rating = models.IntegerField(max_length=2)
+    ashram_pic = models.ImageField()
 
     class Meta:
         app_label = 'ashrams'
