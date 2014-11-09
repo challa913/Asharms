@@ -2,10 +2,44 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+     <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+  </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    {% load staticfiles %}
+    <script src="{% static 'js/home.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
     <title></title>
 </head>
 <body>
-
+<div id="hide-all">&nbsp</div>
+  <div id="slides">
+     {% load staticfiles %}
+     <img src="{% static 'images/example-slide-1.jpg' %}">
+     <img src="{% static 'images/example-slide-2.jpg' %}">
+     <img src="{% static 'images/example-slide-3.jpg' %}">
+     <img src="{% static 'images/example-slide-4.jpg' %}">
+  </div>
+   <h2 id="supporting-count">
+       <div>
+           Supporting
+           <span id="child-count"></span>
+           children
+       </div>
+       <div>
+           from
+           <span id="ashram-count">20</span>
+           ashrams
+       </div>
+   </h2>
 </body>
-{% extends "../templates/header.html" %}
+    {% include "../templates/dropdownheader.html" %}
+    {% include "../templates/header.html" %}
+
+{% load staticfiles %}
+<script src="{% static 'js/jquery.slides.min.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.js' %}"></script>
 </html>

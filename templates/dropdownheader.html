@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     {% load staticfiles %}
     <script src="{% static 'js/dropdownheader.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/dropdownheader.css' %}">
@@ -13,11 +13,22 @@
         <div class="header-drop-element">
             <span id="contact">Contact</span>
         </div>
-        <span id="About" class="header-drop-element">About</span>
-        <span id="ashrams" class="header-drop-element">Ashrams</span>
-        <span id="donations" class="header-drop-element">Donations</span>
-        <span id="needs" class="header-drop-element">Needs</span>
-        <span id="home" class="header-drop-element">Home</span>
+        <div class="header-drop-element">
+            <span id="About">About</span>
+        </div>
+        <div class="header-drop-element">
+             <span id="ashrams">Ashrams</span>
+        </div>
+        <div class="header-drop-element">
+            <span id="donations">Donations</span>
+        </div>
+        <div class="header-drop-element">
+            <span id="needs">Needs</span>
+        </div>
+        <div class="header-drop-element">
+            <span id="home">Home</span>
+        </div>
+
     </div>
 </body>
 </html>

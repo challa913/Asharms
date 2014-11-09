@@ -5,19 +5,19 @@
 #drop-down-header{
     width: 100%;
     height: 40px;
-    margin-top: -8px;
+    margin-top: 17px;
     color: #ffffff;
     position: fixed;
     font-size: 14px;
     right: 0px;
     left: 0px;
+    z-index: 1000;
 }
 #drop-down-header .header-drop-element{
     float: right;
     height: 50%;
-    background: #000000;
     margin: 7px 9px 0 0;
-    padding: 6px 29px;
+    padding: 6px 17px;
 }
 #drop-down-header .header-drop-element:hover{
    cursor: pointer;

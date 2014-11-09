@@ -9,10 +9,11 @@
     margin-top: -8px;
     color: #ffffff;
     display: inline;
-    position: fixed;
+    position: absolute;
     font-size: 14px;
     right: 0px;
     left: 0px;
+    z-index: 20;
 }
 #header-div #header-donate-button{
     background: #5FC657;

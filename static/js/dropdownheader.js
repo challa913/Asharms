@@ -1,5 +1,6 @@
 /**
  * Created by nischal on 9/11/14.
+ * jQuery for drop down header html
  */
 
 $(document).ready(function() {
@@ -23,9 +24,4 @@ $(document).ready(function() {
     $("#contact").click(function () {
         alert('sign-in');
     });
-     $("#header-donate-button , #track-donation, #sign-in").hover(function(){
-    $("#header-div").css("cursor","pointer");
-    },function(){
-    $("#header-div").css("cursor","default");
-  });
 });

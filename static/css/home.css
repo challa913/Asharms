@@ -1,0 +1,111 @@
+/**
+ * Css for elements in home.html
+ */
+
+/**
+ *style for sliding images
+**/
+
+#slides{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 600px;
+    top: 31px;
+}
+#slides .slidesjs-container .slidesjs-slide{
+    z-index: -1 !important;
+    height: auto;
+}
+.slidesjs-navigation{
+    top: 350px;
+    position: absolute;
+}
+.slidesjs-pagination li{
+    display: inline;
+    padding-right: 5px;
+}
+.slidesjs-stop, .slidesjs-play{
+    display: none !important;
+}
+.slidesjs-previous, .slidesjs-next{
+   display: block;
+    font-size: 0;
+    height: 53px;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 90px;
+    z-index: 15;
+}
+.slidesjs-previous{
+    background: url("../images/next-prev.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    left: 0;
+}
+.slidesjs-next{
+    background: url("../images/next-prev.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+    right: 0;
+}
+.slidesjs-pagination {
+    bottom: 25px;
+    font-weight: bold;
+    list-style: none outside none;
+    margin: 0;
+    padding: 5px 0;
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    z-index: 100;
+}
+.slidesjs-pagination li a {
+    background: none repeat scroll 0 0 #fff;
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    font-size: 0;
+    height: 10px !important;
+    line-height: 0;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    width: 10px !important;
+}
+.slidesjs-pagination .active {
+    background: none repeat scroll 0 0 #fff;
+    border: 8px solid #b6b6b6;
+    border-radius: 100%;
+}
+.slidesjs-pagination a:hover {
+    background: none repeat scroll 0 0 #fff;
+    border: 8px solid #b6b6b6;
+    border-radius: 100%;
+}
+
+/**
+ *style for count animation
+**/
+#supporting-count{
+    color: #ffffff;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    position: absolute;
+    left: 75px;
+    top: 122px;
+}
+
+/*
+ * hide doc till all elements are loaded
+ */
+#hide-all
+ {
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: white;
+   z-index: 100;
+
+ }

@@ -1,5 +1,6 @@
 /**
  * Created by nischal on 9/11/14.
+ * jQuery for header.html
  */
 $(document).ready(function() {
     $("#header-donate-button").click(function () {
