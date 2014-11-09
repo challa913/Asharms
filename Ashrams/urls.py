@@ -3,7 +3,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # url(r'^reports/', include('Rehydration.weburls')),
+    url(r'^home/', ),
     # url(r'^reports/', include('Outbreak.weburls')),
     url(r'^reports/', include('myuser.weburls')),
     # url(r'^reports/', include('SecretKey.urls')),
