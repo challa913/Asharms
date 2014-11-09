@@ -1,9 +1,11 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from ashrams.views import sample_html
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^home/', ),
+    url(r'^home/', sample_html),
     # url(r'^reports/', include('Outbreak.weburls')),
     url(r'^reports/', include('myuser.weburls')),
     # url(r'^reports/', include('SecretKey.urls')),

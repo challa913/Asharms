@@ -3,8 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="application/javascript" src="/home/nischal/Asharms/static/js/header.js"></script>
-    <link rel="stylesheet" type="text/css" href="/home/nischal/Asharms/static/css/header.css">
+    {% load staticfiles %}
+    <script src="{% static 'js/header.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
     <title>Home</title>
 </head>
 <body>

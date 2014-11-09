@@ -28,7 +28,7 @@ class Ashrams(Base, models.Model):
                                     default=0)
     user = models.ForeignKey(MyUser)
     ashram_rating = models.IntegerField(max_length=2)
-    ashram_pic = models.ImageField()
+    #ashram_pic = models.ImageField()
 
     class Meta:
         app_label = 'ashrams'
