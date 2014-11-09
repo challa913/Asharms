@@ -1,0 +1,27 @@
+/**
+ * Css for elements in DropDownHeader.html
+ */
+
+#drop-down-header{
+    width: 100%;
+    height: 40px;
+    margin-top: -8px;
+    color: #ffffff;
+    position: fixed;
+    font-size: 14px;
+    right: 0px;
+    left: 0px;
+}
+#drop-down-header .header-drop-element{
+    float: right;
+    height: 50%;
+    background: #000000;
+    margin: 7px 9px 0 0;
+    padding: 6px 29px;
+}
+#drop-down-header .header-drop-element:hover{
+   cursor: pointer;
+   text-shadow: none;
+   background: green;
+
+}
